@@ -8,7 +8,10 @@ import { AppComponent } from './app.component'
 import { HomeComponent } from './pages'
 import { HeaderComponent, FooterComponent, NavComponent } from './shared'
 
-import { appRoutes } from '../routes'
+import { appRoutes } from '../routes';
+import { AboutComponent } from './pages/about/about.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ContactComponent } from './pages/contact/contact.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { appRoutes } from '../routes'
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    AboutComponent,
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
